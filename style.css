@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #25283D;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 2% auto;
+    width: 750px;
+    grid-gap: 1px;
+}
+
+.container > div {
+    overflow: hidden;
+    height: 150px;
+    border: 1px solid;
+}
+
+.faces img {
+    height: 150px;
+
+}
+
+.faces {
+    grid-column: span 1;
+    grid-row: span 1;
+    transition: all 3s;
+}
+
+.faces:hover {
+    grid-column: span 3;
+    grid-row: span 2;
+    height: auto;
+}
+
